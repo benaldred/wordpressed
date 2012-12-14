@@ -1,0 +1,11 @@
+Bootstrap the app
+
+create view pages
+
+run migrations
+
+be rake wordpressed:install:migrations
+
+be rake db:migrate
+
+be rake wordpressed:import

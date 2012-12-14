@@ -1,0 +1,13 @@
+TODO
+
+- improve the routes constraints on blog posts and archives.
+
+- better migrations
+- add seed file of test data
+- publish the engine on github
+- deploy to heroku
+- add webhook functionality to notify
+- test it all
+- add archives
+- add tags
+- add search
