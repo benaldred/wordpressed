@@ -4,10 +4,17 @@ TODO
 
 - better migrations
 - add seed file of test data
-- publish the engine on github
 - deploy to heroku
+- build out the other pages
+- add task to install:views
 - add webhook functionality to notify
 - test it all
+- add caching
 - add archives
 - add tags
 - add search
+
+
+Possible
+
+- add multi author
