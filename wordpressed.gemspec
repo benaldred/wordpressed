@@ -7,11 +7,11 @@ require "wordpressed/version"
 Gem::Specification.new do |s|
   s.name        = "wordpressed"
   s.version     = Wordpressed::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Wordpressed."
-  s.description = "TODO: Description of Wordpressed."
+  s.authors     = ["Ben Aldred"]
+  s.email       = ["ben@tinycodefactory.com"]
+  s.homepage    = "https://github.com/benaldred/wordpressed"
+  s.summary     = "Include a wordpress.com blog in your app"
+  s.description = "Harness the power of wordpress right in your app"
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["spec/**/*"]
