@@ -15,3 +15,13 @@ gem "jquery-rails"
 
 # To use debugger
 # gem 'debugger'
+
+group :development do
+  gem 'guard-rspec'
+  gem 'rb-fsevent', '~> 0.9.1'
+  gem "database_cleaner"
+end
+
+group :test, :development do
+  gem "database_cleaner"
+end

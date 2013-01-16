@@ -6,9 +6,10 @@ namespace :wordpressed do
 
   desc "Import posts from the blog"
   task :import => :environment do
-    response  = JSON.parse(open('https://public-api.wordpress.com/rest/v1/sites/leanstartco.wordpress.com/posts').read)
+    raise "You need to set the Wordpressed.wordpress_url in the initializer" if Wordpressed.wordpress_url.nil?
+    response  = JSON.parse(open('https://public-api.wordpress.com/rest/v1/sites/#{Wordpressed.wordpress_url}/posts').read)
     response["posts"].each do |post|
-      Wordpressed::Post.create_from_json!(post)
+      Wordpressed::Post.find_or_create_from_json(post)
     end
   end
 
