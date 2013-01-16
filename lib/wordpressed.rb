@@ -10,6 +10,9 @@ module Wordpressed
   #mattr_accessor :feed_url
   #@@feed_url = "#{wordpress_url}/feed/"
 
+  mattr_accessor :password
+  @@password = ""
+
   mattr_accessor :layout
   @@layout = 'application'
 
