@@ -20,6 +20,7 @@ group :development do
   gem 'guard-rspec'
   gem 'rb-fsevent', '~> 0.9.1'
   gem "database_cleaner"
+  gem 'psych' # this should not be needed
 end
 
 group :test, :development do
