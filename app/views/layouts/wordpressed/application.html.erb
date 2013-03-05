@@ -7,8 +7,11 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
- WORDPRESSED LAYOUT
-<%= yield %>
-
+  <div class="wrapper">
+    <header>
+      <h1>Wordpressed Admin</h1>
+    </header>
+    <%= yield %>
+  </div>
 </body>
 </html>

@@ -3,7 +3,7 @@ class Wordpressed::AdminController < ApplicationController
   before_filter :authenticate_user
 
   def index
-
+    @posts = Wordpressed::Post.order('created_at ASC').all
   end
 
   def sync

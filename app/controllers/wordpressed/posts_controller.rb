@@ -1,6 +1,8 @@
 class Wordpressed::PostsController < ApplicationController
   layout Proc.new { |_| Wordpressed.layout }
   before_filter :load_posts
+  respond_to :html, expect: [:feed]
+  respond_to :rss, only: [:feed]
 
   # defer index to parent app
   def index
@@ -25,6 +27,11 @@ class Wordpressed::PostsController < ApplicationController
   def month
     @posts = Wordpressed::Post.published.within_month(params[:year], params[:month])
     render :template => 'posts/month'
+  end
+
+  def feed
+    @posts = Wordpressed::Post.published
+    respond_with(@posts)
   end
 
   private

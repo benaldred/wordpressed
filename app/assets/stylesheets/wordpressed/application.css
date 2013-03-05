@@ -11,3 +11,44 @@
  *= require_self
  *= require_tree .
  */
+
+ body {
+  font-family: 'Helvetica';
+}
+
+.wrapper {
+  width: 400px;
+  margin: 50px auto;
+}
+
+
+header h1 {
+  color: #555;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.button_to {
+  text-align: center;
+}
+
+.button_to input {
+  font-size: 35px;
+}
+
+ol.posts {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  margin-top: 40px;
+}
+
+ol.posts li {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  color: #555;
+  font-size: 14px;
+  text-align: center;
+}
+

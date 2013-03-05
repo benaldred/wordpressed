@@ -1,1 +1,7 @@
 <%= button_to "Sync", sync_blog_path, method: :post %>
+
+<ol class="posts">
+  <% @posts.each do |post| %>
+  <li><%= post.title %></li>
+  <% end %>
+</ol>
