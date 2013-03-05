@@ -13,6 +13,8 @@ Wordpressed::Engine.routes.draw do
   match '/:year/:month' => 'posts#month', constraints: Wordpressed::Constraints::MonthRoute, as: 'month_archive'
   match '/:year' => 'posts#year', constraints: { year: /[0-9]{4}/}
 
+  get '/feed' => 'posts#feed', :as => 'feed'
+
   #search
   #/?s=foo
 
