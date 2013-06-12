@@ -15,14 +15,14 @@ gem "jquery-rails"
 
 # To use debugger
 # gem 'debugger'
-
-group :development do
-  gem 'guard-rspec'
-  gem 'rb-fsevent', '~> 0.9.1'
-  gem "database_cleaner"
-  gem 'psych' # this should not be needed
-end
-
 group :test, :development do
+  gem 'sqlite3',          '1.3.7'
+  gem 'guard',            '1.7.0'
+  gem 'guard-rspec',      '2.5.3'
+  gem 'rspec-rails',      '2.13.0'
   gem "database_cleaner"
+  gem 'factory_girl_rails'
+  gem 'rb-inotify',       '0.9.0', require: false
+  gem 'rb-fsevent',       '0.9.3', require: false
 end
+

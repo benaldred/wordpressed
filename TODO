@@ -1,20 +1,15 @@
 TODO
 
-- improve the routes constraints on blog posts and archives.
-
-- better migrations
-- add seed file of test data
-- deploy to heroku
-- build out the other pages
-- add task to install:views
-- add webhook functionality to notify
-- test it all
-- add caching
-- add archives
-- add tags
-- add search
-
-
-Possible
-
-- add multi author
+[ ] improve the routes constraints on blog posts and archives.
+[ ] allow mongodb usage
+[ ] better migrations
+[ ] add seed file of test data
+[ ] deploy to heroku
+[ ] build out the other pages
+[ ] add task to install:views
+[ ] add webhook url to ping from wordpress
+[ ] add caching
+[x] add archives
+[ ] add tags
+[ ] add search
+[ ] instructions on how to install
